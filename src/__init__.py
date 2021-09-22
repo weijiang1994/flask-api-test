@@ -7,7 +7,7 @@
 @Desc    : __init__
 @Software: PyCharm
 """
-from flask import Flask
+from flask import Flask, render_template
 from src.utils import current_time
 from src.view.application_obj import ao_bp
 
@@ -17,7 +17,7 @@ def create_app():
 
     @app.get('/')
     def index():
-        return 'This is a Flask API test repo.'
+        return render_template('index.html')
 
     # register a context processor variable by decorator
     @app.context_processor
