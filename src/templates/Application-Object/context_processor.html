@@ -11,7 +11,8 @@
         <p>Register a template variable</p>
         <h4>current_time: {{ current_time }}</h4>
         <p>Register a template function</p>
-        <h4>today: {{ fmt_ct() }}</h4>
+        <h4>today(default): {{ fmt_ct() }}</h4>
+        <h4>today('%Y%m%d'): {{ fmt_ct('%Y%m%d') }}</h4>
         <p><a href="https://github.com/weijiang1994/flask-api-test">Source Code</a></p>
     </div>
 {% endblock %}
