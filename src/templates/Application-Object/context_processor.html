@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+    context_processor
+{% endblock %}
+
+{% block content %}
+    <br>
+    <div class="container">
+        <h2>Flask.context_processor sample</h2>
+        <hr>
+        <p>Register a template variable</p>
+        <h4>current_time: {{ current_time }}</h4>
+        <p>Register a template function</p>
+        <h4>today: {{ fmt_ct() }}</h4>
+        <p><a href="https://github.com/weijiang1994/flask-api-test">Source Code</a></p>
+    </div>
+{% endblock %}
